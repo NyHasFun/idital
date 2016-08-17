@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Painting Name:</strong>
+  <%= @painting.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @painting.description %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @painting.link %>
+</p>
+
+<p>
+  <strong>Stars:</strong>
+  <%= @painting.votes_for.size %>
+</p>
+
+<%= link_to 'Edit', edit_painting_path(@painting) %> |
+<%= link_to 'Back', paintings_path %>
