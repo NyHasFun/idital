@@ -1,7 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Paintings</h1>
-
+<h1>Paintings Contest</h1>
+<h2>Click on your favorite image</h2>
+<!--
 <table>
   <thead>
     <tr>
@@ -25,7 +26,22 @@
     <% end %>
   </tbody>
 </table>
+-->
+
+<img id="one" src="http://media.techeblog.com/images/pokemon-painting.jpg" width="20%" height="250"/>
+<img id="two" src="http://main-designyoutrust.netdna-ssl.com/wp-content/uploads/2011/02/breloom_painting_by_purplekecleon-d35js5j-600x431.jpg?iv=81" width="20%" height="250"/>
+<img id="three" src="https://ae01.alicdn.com/kf/HTB1x8YrKVXXXXaGXpXXq6xXFXXXY/JLKing-Paste-DIY-Pokemon-Go-Pet-Elf-Fruit-Printing-Full-Area-Mosaic-Diamond-Painting-Square-Embroidery.jpg_640x640.jpg" width="20%" height="250"/>
 
 <br>
 
-<%= link_to 'New Painting', new_painting_path %>
+<script>
+  $("img").on("click", function(){
+    alert("Your vote has been registered!");
+  });
+</script>
+
+<style>
+  body{
+    background: lightblue;
+  }
+</style>
